@@ -1,4 +1,5 @@
 # color-valgrind
+Highlight important information from the already great [valgrind](https://valgrind.org/)
 
 ## New
 ![image](https://github.com/JakeRoggenbuck/color-valgrind/assets/35516367/395d4692-b5ab-438a-b9d0-78b339303c0b)
