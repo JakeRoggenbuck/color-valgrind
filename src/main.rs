@@ -1,10 +1,30 @@
 use efcl::{bold, color, Color};
 use regex::Regex;
+use std::env;
+use std::process::exit;
 use std::process::Command;
 
 fn main() {
+    let mut args: Vec<_> = env::args().collect();
+
+    if args.len() == 1 {
+        println!("Needs at least one arguments");
+        exit(0);
+    }
+
+    // Remove first arg
+    args.drain(0..1);
+
+    let command: String = args
+        .clone()
+        .into_iter()
+        .map(|x| x + " ")
+        .collect::<String>();
+
+    println!("Running on {}...", color!(Color::GREEN, &command));
+
     let out: std::process::Output = Command::new("valgrind")
-        .args(["./a.out"])
+        .args(args)
         .output()
         .expect("failed to execute process");
 
