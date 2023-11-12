@@ -9,3 +9,10 @@ I often switch quickly between valgrind output and code. This leads to me lossin
 
 ## Previously
 ![image](https://github.com/JakeRoggenbuck/color-valgrind/assets/35516367/092a1a1f-4162-44b2-93b1-3c5ef193ebc7)
+
+## Install
+```
+git clone https://github.com/JakeRoggenbuck/color-valgrind.git
+cd color-valgrind
+cargo install --path .
+```
