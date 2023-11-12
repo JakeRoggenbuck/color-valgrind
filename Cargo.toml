@@ -1,5 +1,5 @@
 [package]
-name = "rust-color-wrapper-valgrind"
+name = "color-valgrind"
 version = "0.1.0"
 edition = "2021"
 
