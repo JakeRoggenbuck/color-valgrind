@@ -8,7 +8,7 @@ fn main() {
     let mut args: Vec<_> = env::args().collect();
 
     if args.len() == 1 {
-        println!("Needs at least one arguments");
+        println!("Needs at least one argument.");
         exit(0);
     }
 
